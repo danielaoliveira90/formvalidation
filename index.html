@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sign Up</h1>
+
+    <form id="signupForm">
+        <label for="username">Username (min 5 characters):</label><br>
+        <input type="text" id="username" name="username"><br>
+        <span class="error" id="usernameError"></span><br>
+
+        <label for="password">Password (min 8 characters):</label><br>
+        <input type="password" id="password" name="password"><br>
+        <span class="error" id="passwordError"></span><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
